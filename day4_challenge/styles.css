@@ -1,0 +1,29 @@
+/* I didn't expect <html> should be set as height 100% with body */
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100%;
+}
+.father {
+  background-color: rgb(59, 167, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: rgb(247, 97, 97);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.child {
+  width: 25px;
+  height: 25px;
+  background-color: azure;
+}
+/* https://codesandbox.io/s/blueprint-44p6b?file=/index.html */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body, html{ /* browser가 가진 default style을 상쇄시키기 위함 */
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 400%;
+            background-color: goldenrod;
+        }
+        /* #boxOne{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            position: static;
+        }
+        #boxTwo{
+            height: 300px;
+            width: 100%;
+            background-color: blue;
+            position: fixed;
+            bottom: 10px;
+            left: 100px;
+        } */
+        .absolute-box{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            /* position: absolute; */
+            position: relative;
+        }
+        .absolute-box-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            /* position: fixed; */
+            right: 10px;
+            top: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div>
+    <div class="absolute-box">
+        <div class="absolute-box-child"></div>
+    </div>
+</body>
+</html>

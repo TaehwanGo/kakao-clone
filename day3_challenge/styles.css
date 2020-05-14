@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    height: 1500px;
+    margin: 0;
+    /* padding: 0; */
+    /* display: relative; */
+  }
+  .father {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .header {
+    background-color: rgb(216, 81, 110);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: block;
+    z-index: 1;
+  }
+  .box {
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    background-color: antiquewhite;
+  }
+  #first_child {
+    width: 70%;
+    background-color: rgb(78, 199, 199);
+    height: 100%;
+    padding-left: 50px;
+  }
+  #second_child {
+    width: 30%;
+    background-color: orange;
+    border: 5px solid grey;
+  }
+  #title {
+    color: white;
+  }
+  #cross_point {
+    background-color: rgb(33, 156, 33);
+    width: 20%;
+    height: 20px;
+    position: fixed; /*absolute*/ 
+    top: 90px;
+    right: 19%;
+    z-index: 2;
+  }
+  /* https://m4ot7.csb.app/ 가 아니라 https://codesandbox.io/s/m4ot7 로 제출해야됨 */
