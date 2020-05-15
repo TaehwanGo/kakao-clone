@@ -26,4 +26,7 @@ body {
   height: 25px;
   background-color: azure;
 }
+.child:nth-child(2):hover {
+  background-color: green;
+}
 /* https://codesandbox.io/s/blueprint-44p6b?file=/index.html */
