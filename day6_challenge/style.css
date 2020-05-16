@@ -1,0 +1,143 @@
+html,
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#container1 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(0, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: rotator 1s infinite;
+}
+.dot {
+  width: 15%;
+  height: 15%;
+  background-color: white;
+  border-radius: 100%;
+}
+@keyframes rotator {
+  0%,
+  50% {
+    transform: none;
+  }
+  50%,
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+#container2 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(59, 179, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  width: 200px;
+  height: 100px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar {
+  margin: 2px;
+  background-color: white;
+  width: 10px;
+  height: 35px;
+}
+#bar1 {
+  animation: growing1 2s infinite;
+}
+@keyframes growing1 {
+  0% {
+    transform: none;
+  }
+  10% {
+    transform: scale(1, 2);
+    /* 1 */
+  }
+  20% {
+    transform: none;
+  }
+}
+#bar2 {
+  animation: growing2 2s infinite;
+}
+@keyframes growing2 {
+  0% {
+    transform: none;
+  }
+  15% {
+    transform: scale(1, 2);
+    /* 2 */
+  }
+  25% {
+    transform: none;
+  }
+}
+#bar3 {
+  animation: growing3 2s infinite;
+}
+@keyframes growing3 {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scale(1, 2);
+    /* 3 */
+  }
+  30% {
+    transform: none;
+  }
+}
+#bar4 {
+  animation: growing4 2s infinite;
+}
+@keyframes growing4 {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scale(1, 2);
+    /* 4 */
+  }
+  35% {
+    transform: none;
+  }
+}
+#bar5 {
+  animation: growing5 2s infinite;
+}
+@keyframes growing5 {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: scale(1, 2);
+    /* 5 */
+  }
+  40% {
+    transform: none;
+  }
+}
+
+/* To delay an animation, use ‘animation-delay’ or add a number to the animation expression: ‘animation: 5s myAnim linear 2s;’ where ‘2s’ is the animation delay. */
+/* I tried but didn't work */
+/* https://codesandbox.io/s/blueprint-np7e5?file=/src/styles.css */
